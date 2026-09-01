@@ -18,7 +18,7 @@
 <body>
 
 <h1>POLÍTICA DE PRIVACIDAD</h1>
-<p class="subtitle"><strong>Última actualización: 7 de junio de 2026</strong></p>
+<p class="subtitle"><strong>Última actualización: 1 de septiembre de 2026</strong></p>
 <p>Versión en francés: <a href="privacy-fr.html">Politique de confidentialité en français</a> · Versión en inglés: <a href="privacy.html">Privacy Policy in English</a></p>
 
 <p>Esta Política de Privacidad para <strong>Setty PON</strong> (que opera bajo el nombre comercial <strong>Ysea</strong>) («nosotros» o «nuestro») describe cómo y por qué podemos acceder, recopilar, almacenar, usar y/o compartir («tratar») su información personal cuando utiliza nuestros servicios («Servicios»).</p>
@@ -60,6 +60,16 @@ Correo electrónico: <a href="mailto:yseaapp_services@outlook.com">yseaapp_servi
   <li>Contador diario de uso de mensajes</li>
 </ul>
 
+<h3>Medición de audiencia (solo con su consentimiento)</h3>
+<p>La recopilación de estadísticas de uso está <strong>desactivada por defecto</strong>. Solo se realiza si usted la activa explícitamente (la casilla está sin marcar por defecto durante la bienvenida y puede cambiarse en cualquier momento en <strong>Ajustes → Privacidad</strong>). En ese caso, la aplicación envía a <strong>PostHog</strong>:</p>
+<ul>
+  <li>un identificador de usuario seudonimizado;</li>
+  <li>las pantallas vistas y las acciones en la aplicación (funciones utilizadas);</li>
+  <li>el idioma de la aplicación y el nivel de suscripción;</li>
+  <li>información técnica del dispositivo (modelo, sistema operativo, versión de la aplicación) facilitada por el SDK.</li>
+</ul>
+<p>Estos datos se utilizan únicamente para entender el uso de la aplicación y mejorarla. No contienen <strong>ningún dato de salud</strong> (perfiles de menores, diario, fotos, contenidos), nunca se utilizan con fines publicitarios y nunca se venden. Si no da su consentimiento, no se recopila ningún dato de medición de audiencia.</p>
+
 <h3>Datos de suscripción</h3>
 <p>Las compras son gestionadas por <strong>RevenueCat</strong> y las tiendas de aplicaciones (App Store / Google Play). No almacenamos los datos de su tarjeta de pago.</p>
 
@@ -68,6 +78,8 @@ Correo electrónico: <a href="mailto:yseaapp_services@outlook.com">yseaapp_servi
   <li>Para proporcionar y operar los Servicios (cuenta, perfiles, diario, asistente)</li>
   <li>Para personalizar las respuestas de la IA con el contexto de su hijo</li>
   <li>Para gestionar suscripciones y cuotas de almacenamiento</li>
+  <li>Para medir el uso y mejorar la aplicación (solo con su consentimiento — base jurídica: consentimiento, Art. 6.1.a RGPD)</li>
+  <li>Para diagnosticar errores técnicos y fallos (base jurídica: interés legítimo, Art. 6.1.f RGPD)</li>
   <li>Para enviar notificaciones administrativas (seguridad, actualizaciones de política)</li>
   <li>Para garantizar la seguridad y prevenir el fraude</li>
 </ul>
@@ -88,12 +100,20 @@ Correo electrónico: <a href="mailto:yseaapp_services@outlook.com">yseaapp_servi
   <p>Política de privacidad de Anthropic: <a href="https://www.anthropic.com/privacy">anthropic.com/privacy</a></p>
 </div>
 
+<h3>PostHog (medición de audiencia) — Unión Europea</h3>
+<p>Si ha consentido la medición de audiencia, los datos de uso descritos en la sección 2 son tratados por <strong>PostHog</strong> en una infraestructura alojada en la <strong>Unión Europea</strong> (<code>eu.i.posthog.com</code>). No se produce ninguna transferencia fuera de la UE para esta finalidad. Puede retirar su consentimiento en cualquier momento en Ajustes → Privacidad; la recopilación se detiene de inmediato.</p>
+
+<h3>Sentry (informes de errores técnicos) — Transferencia fuera de la UE</h3>
+<p>En caso de fallo o error técnico, se envía un informe (tipo de error, traza de pila, modelo de dispositivo, versión de la aplicación, identificador de usuario seudonimizado) a <strong>Functional Software, Inc. (Sentry)</strong> — Estados Unidos — para diagnosticar y corregir el problema. Transferencia regida por las Cláusulas Contractuales Tipo aprobadas por la Comisión Europea. Estos informes no incluyen ningún dato de salud.</p>
+
 <h2>5. CONSERVACIÓN DE DATOS</h2>
 <ul>
   <li><strong>Datos activos:</strong> conservados mientras su cuenta esté activa.</li>
   <li><strong>Tras la eliminación de la cuenta:</strong> todos sus datos (perfiles, diario, fotos, grabaciones) se eliminan en un plazo de <strong>30 días</strong>.</li>
   <li><strong>Datos de suscripción:</strong> conservados por RevenueCat de conformidad con sus obligaciones legales y fiscales.</li>
   <li><strong>Registros de seguridad:</strong> conservados un máximo de 90 días por motivos de seguridad.</li>
+  <li><strong>Datos de medición de audiencia (si se han consentido):</strong> conservados por PostHog mientras la cuenta esté activa; eliminados al eliminar la cuenta o a petición a la dirección de contacto. La retirada del consentimiento detiene toda recopilación posterior.</li>
+  <li><strong>Informes de errores (Sentry):</strong> conservados un máximo de 90 días.</li>
 </ul>
 
 <h2>6. SUS DERECHOS (RGPD)</h2>
@@ -120,6 +140,7 @@ Correo electrónico: <a href="mailto:yseaapp_services@outlook.com">yseaapp_servi
 
 <h2>9. COOKIES</h2>
 <p>La aplicación móvil Ysea no utiliza cookies. Los datos se almacenan localmente en su dispositivo (AsyncStorage) únicamente para la funcionalidad de la aplicación (sesión, preferencias de idioma, notificaciones).</p>
+<p>Si ha activado la medición de audiencia, el SDK de PostHog genera un identificador aleatorio almacenado localmente en el dispositivo para distinguir las sesiones. No se utilizan cookies de terceros ni rastreadores publicitarios. Desactivar la medición de audiencia en Ajustes → Privacidad elimina este uso.</p>
 
 <h2>10. ACTUALIZACIONES DE LA POLÍTICA</h2>
 <p>Podemos actualizar esta política periódicamente. Para cambios sustanciales, le notificaremos a través de la aplicación. La fecha de última actualización se muestra en la parte superior de este documento.</p>

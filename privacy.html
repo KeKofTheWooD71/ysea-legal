@@ -18,7 +18,7 @@
 <body>
 
 <h1>PRIVACY NOTICE</h1>
-<p class="subtitle"><strong>Last updated June 07, 2026</strong></p>
+<p class="subtitle"><strong>Last updated September 01, 2026</strong></p>
 <p>French version: <a href="privacy-fr.html">Politique de confidentialité en français</a></p>
 
 <p>This Privacy Notice for <strong>Setty PON</strong> (doing business as <strong>Ysea</strong>) ("we," "us," or "our") describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services").</p>
@@ -60,6 +60,16 @@ Email: <a href="mailto:yseaapp_services@outlook.com">yseaapp_services@outlook.co
   <li>Daily message usage counter</li>
 </ul>
 
+<h3>Analytics (only with your consent)</h3>
+<p>Usage analytics is <strong>off by default</strong>. It only happens if you explicitly enable it (the checkbox is unticked by default during onboarding, and can be changed anytime in <strong>Settings → Privacy</strong>). When enabled, the app sends the following to <strong>PostHog</strong>:</p>
+<ul>
+  <li>a pseudonymised user identifier;</li>
+  <li>screens viewed and in-app actions (features used);</li>
+  <li>app language and subscription tier;</li>
+  <li>technical device information (model, operating system, app version) provided by the SDK.</li>
+</ul>
+<p>This data is used solely to understand app usage and improve the app. It contains <strong>no health data</strong> (child profiles, journal, photos, content), is never used for advertising, and is never sold. If you do not consent, no analytics data is collected.</p>
+
 <h3>Subscription data</h3>
 <p>Purchases are managed by <strong>RevenueCat</strong> and the app stores (App Store / Google Play). We do not store your payment card details.</p>
 
@@ -68,6 +78,8 @@ Email: <a href="mailto:yseaapp_services@outlook.com">yseaapp_services@outlook.co
   <li>To provide and operate the Services (account, profiles, journal, assistant)</li>
   <li>To personalize AI responses with your child's context</li>
   <li>To manage subscriptions and storage quotas</li>
+  <li>To measure usage and improve the app (only with your consent — legal basis: consent, Art. 6.1.a GDPR)</li>
+  <li>To diagnose technical errors and crashes (legal basis: legitimate interests, Art. 6.1.f GDPR)</li>
   <li>To send administrative notifications (security, policy updates)</li>
   <li>To ensure security and prevent fraud</li>
 </ul>
@@ -88,12 +100,20 @@ Email: <a href="mailto:yseaapp_services@outlook.com">yseaapp_services@outlook.co
   <p>Anthropic Privacy Policy: <a href="https://www.anthropic.com/privacy">anthropic.com/privacy</a></p>
 </div>
 
+<h3>PostHog (analytics) — European Union</h3>
+<p>If you have consented to analytics, the usage data described in section 2 is processed by <strong>PostHog</strong> on infrastructure hosted in the <strong>European Union</strong> (<code>eu.i.posthog.com</code>). No transfer outside the EU takes place for this purpose. You can withdraw your consent at any time in Settings → Privacy; collection stops immediately.</p>
+
+<h3>Sentry (technical error reporting) — Transfer outside the EU</h3>
+<p>In the event of a crash or technical error, a report (error type, stack trace, device model, app version, pseudonymised user identifier) is sent to <strong>Functional Software, Inc. (Sentry)</strong> — United States — to diagnose and fix the issue. Transfer governed by Standard Contractual Clauses approved by the European Commission. No health data is included in these reports.</p>
+
 <h2>5. DATA RETENTION</h2>
 <ul>
   <li><strong>Active data:</strong> retained for as long as your account is active.</li>
   <li><strong>After account deletion:</strong> all your data (profiles, journal, photos, recordings) is deleted within <strong>30 days</strong>.</li>
   <li><strong>Subscription data:</strong> retained by RevenueCat in accordance with their legal and tax obligations.</li>
   <li><strong>Security logs:</strong> retained for a maximum of 90 days for security purposes.</li>
+  <li><strong>Analytics data (if consented):</strong> retained by PostHog for as long as the account is active; deleted when the account is deleted or on request to the contact address. Withdrawing consent stops all further collection.</li>
+  <li><strong>Error reports (Sentry):</strong> retained for a maximum of 90 days.</li>
 </ul>
 
 <h2>6. YOUR RIGHTS (GDPR)</h2>
@@ -120,6 +140,7 @@ Email: <a href="mailto:yseaapp_services@outlook.com">yseaapp_services@outlook.co
 
 <h2>9. COOKIES</h2>
 <p>The Ysea mobile app does not use cookies. Data is stored locally on your device (AsyncStorage) solely for app functionality (session, language preferences, notifications).</p>
+<p>If you have enabled analytics, the PostHog SDK generates a random identifier stored locally on the device to distinguish sessions. No third-party cookies or advertising trackers are used. Disabling analytics in Settings → Privacy removes this usage.</p>
 
 <h2>10. POLICY UPDATES</h2>
 <p>We may update this policy periodically. For material changes, we will notify you through the app. The last updated date is shown at the top of this document.</p>
